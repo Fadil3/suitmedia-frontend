@@ -1,0 +1,12 @@
+.contact__container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__container form > * {
+  margin-bottom: 10px;
+}
