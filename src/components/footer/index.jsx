@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import './Footer.css'
 import { icons } from '../../constants'
 
 export default function Footer() {
@@ -15,9 +15,9 @@ export default function Footer() {
     },
   ]
   return (
-    <footer className={styles.footer}>
+    <footer>
       <p>Copyright &copy; 2016. PT Company</p>
-      <div className={styles.footer__social}>
+      <div className="footer__social">
         {social.map((item, index) => (
           <a
             href={item.href}
