@@ -1,4 +1,4 @@
-import aboutBg from '../assets/images/aboutBg.png'
-import bg from '../assets/images/bg.png'
+import aboutBg from '../assets/images/aboutBg.jpg'
+import bg from '../assets/images/bg.jpg'
 
-export { aboutBg, bg }
+export default { aboutBg, bg }
