@@ -28,19 +28,23 @@ export default function Contact() {
     // Validate form and set error state
     if (form.name === '' || form.email === '' || form.message === '') {
       setError({
-        ...error,
         name: form.name === '' ? 'This field is required' : '',
-        email: form.email === '' ? 'This field is required' : '',
         message: form.message === '' ? 'This field is required' : '',
+        email:
+          form.email === ''
+            ? 'This field is required'
+            : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
+            ? 'Invalid email address'
+            : '',
       })
       //check email format
-      if (form.email !== '' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-        setError({
-          ...error,
-          email: 'Invalid email address',
-        })
-        return
-      }
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+      setError({
+        name: '',
+        message: '',
+        email: 'Invalid email address',
+      })
+      return
     } else {
       setError({
         name: '',
