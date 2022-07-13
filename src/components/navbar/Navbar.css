@@ -44,3 +44,33 @@ ul li:hover ul.dropdown {
 ul li ul.dropdown li {
   display: block;
 }
+
+.responsive__menu {
+  display: none;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+  nav {
+    justify-content: space-between;
+
+    padding: 0 10px;
+  }
+
+  .responsive__menu {
+    display: block;
+  }
+
+  .regular__menu li {
+    display: none;
+  }
+
+  ul li ul.dropdown {
+    width: 200px;
+    left: -140px;
+  }
+
+  .child {
+    padding-left: 20px;
+  }
+}
