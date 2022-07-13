@@ -6,9 +6,9 @@ export default function CarouselModule() {
   const data = [
     {
       image: images.bg,
-      caption: `<div className="carousel__caption">
+      caption: `
                 THIS IS A PLACE WHERE TECHNOLOGY & CREATIVITY FUSED INTO DIGITAL CHEMISTRY
-                </div>`,
+                `,
     },
     {
       image: images.aboutBg,
@@ -43,7 +43,6 @@ export default function CarouselModule() {
           textAlign: 'left',
           maxWidth: '100%',
           maxHeight: '800px',
-          // margin: '40px auto',
         }}
       />
     </div>
