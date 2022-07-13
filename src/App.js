@@ -5,7 +5,7 @@ import { CarouselModule, ContactModule, ValuesModule } from './modules'
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar />
       <CarouselModule />
       <ValuesModule />
       <ContactModule />
