@@ -15,3 +15,15 @@
   flex-direction: row;
   gap: 10px;
 }
+
+/* responsive */
+@media (max-width: 1000px) {
+  .values__container {
+    width: 100%;
+  }
+
+  .values__card {
+    flex-direction: column;
+    align-items: center;
+  }
+}

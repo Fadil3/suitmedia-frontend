@@ -9,7 +9,7 @@ export default function Value({
   borderColor,
 }) {
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="value__wrapper">
       <div
         className={`value__container`}
         style={{
@@ -29,10 +29,17 @@ export default function Value({
         </div>
       </div>
       {haveArrow && (
-        <div
-          className="arrow-right"
-          style={{ borderLeft: `16px solid ${color}` }}
-        ></div>
+        <>
+          <div
+            className="arrow-right"
+            style={{ borderLeft: `16px solid ${color}` }}
+          ></div>
+
+          <div
+            className="arrow-bottom"
+            style={{ borderTop: `16px solid ${color}` }}
+          ></div>
+        </>
       )}
     </div>
   )

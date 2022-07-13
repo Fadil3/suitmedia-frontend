@@ -1,3 +1,7 @@
+.value__wrapper {
+  display: flex;
+}
+
 .value__container {
   display: flex;
   flex-direction: column;
@@ -33,4 +37,27 @@
   border-bottom: 16px solid transparent;
 
   margin-top: calc(250px / 2);
+}
+
+.arrow-bottom {
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  margin: 0 auto;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+  .value__wrapper {
+    flex-direction: column;
+  }
+
+  .arrow-bottom {
+    display: block;
+  }
+  .arrow-right {
+    display: none;
+  }
 }
