@@ -13,3 +13,8 @@ input {
   font-size: 16px;
   font-weight: 600;
 }
+
+.input__error {
+  color: red;
+  font-size: 14px;
+}
