@@ -4,9 +4,7 @@ export default function Input({
   type,
   title,
   name,
-  placeholder,
-  value,
-  onChange,
+  handleChange,
   error,
   ...props
 }) {
@@ -14,10 +12,10 @@ export default function Input({
     <div className="input__container">
       <label htmlFor={name}>{title}</label>
       <input
+        style={{ borderColor: error !== '' ? 'red' : '#ccc' }}
         type={type}
         name={name}
-        placeholder={placeholder}
-        onChange={onChange}
+        onChange={handleChange}
         {...props}
       />
       {error && <span className="input__error">{error}</span>}
