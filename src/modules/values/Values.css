@@ -1,0 +1,17 @@
+.values__container {
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+.values__title {
+  text-align: center;
+}
+
+.values__card {
+  display: flex;
+  width: 100%;
+  margin: 20px auto 0 auto;
+
+  flex-direction: row;
+  gap: 10px;
+}

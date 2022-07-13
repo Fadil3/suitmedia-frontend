@@ -1,0 +1,36 @@
+.value__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  color: #f5f5f5;
+
+  padding: 30px 20px;
+  width: 350px;
+  height: 250px;
+}
+
+.value__icon img {
+  min-width: auto;
+  height: 25px;
+  /* height: auto; */
+}
+
+.value__title h2 {
+  margin: 5px 0 25px 0;
+}
+
+.value__desc p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+
+  margin-top: calc(250px / 2);
+}
