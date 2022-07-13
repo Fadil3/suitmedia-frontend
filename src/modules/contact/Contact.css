@@ -1,0 +1,19 @@
+.contact__container {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__container form > * {
+  margin-bottom: 10px;
+}
+
+/* reesponsive */
+@media screen and (max-width: 1000px) {
+  .contact__container {
+    width: 80%;
+  }
+}

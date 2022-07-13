@@ -1,0 +1,9 @@
+/* responsive */
+@media (max-width: 600px) {
+  .carousel-caption-bottom {
+    font-size: 16px !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    width: 70% !important;
+  }
+}
