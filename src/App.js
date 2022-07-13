@@ -1,10 +1,11 @@
 import './App.css'
 import { Footer, Value } from './components'
-import { ContactModule, ValuesModule } from './modules'
+import { CarouselModule, ContactModule, ValuesModule } from './modules'
 
 function App() {
   return (
     <div className="App">
+      <CarouselModule />
       <ValuesModule />
       <ContactModule />
       <Footer />
