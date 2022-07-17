@@ -1,7 +1,6 @@
 nav {
   display: flex;
   justify-content: space-around;
-
   align-items: center;
 }
 
@@ -49,12 +48,21 @@ ul li ul.dropdown li {
   display: none;
 }
 
+.active {
+  display: none;
+  z-index: 5;
+}
+
+svg {
+  width: 28px;
+  height: 28px;
+}
+
 /* responsive */
 @media (max-width: 1000px) {
   nav {
     justify-content: space-between;
-
-    padding: 0 10px;
+    padding: 10px;
   }
 
   .responsive__menu {
@@ -67,10 +75,14 @@ ul li ul.dropdown li {
 
   ul li ul.dropdown {
     width: 200px;
-    left: -140px;
+    right: 200px;
   }
 
-  .child {
-    padding-left: 20px;
+  .active {
+    display: block;
+  }
+
+  .responsive__item {
+    background-color: #f2f2f2;
   }
 }
